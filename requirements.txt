@@ -1,0 +1,2 @@
+# Optional local run for Python samples (DRY_RUN mode — no Spark/Airflow required)
+# pip install -r requirements.txt
