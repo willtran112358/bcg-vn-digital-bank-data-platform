@@ -175,6 +175,7 @@ sequenceDiagram
 
 ## Related docs
 
+- [**1-page cheat sheet (print)**](06-consulting-de-cheat-sheet-1page.md) — pitch, scripts, proof points on one page  
 - [`../docs/07-vendor-bank-collaboration.md`](../docs/07-vendor-bank-collaboration.md) — RACI, ceremonies  
 - [`../docs/06-case-missing-customer-income.md`](../docs/06-case-missing-customer-income.md) — flagship consulting story  
 - [`01-cto-round-prep.md`](01-cto-round-prep.md) — technical deep dive  

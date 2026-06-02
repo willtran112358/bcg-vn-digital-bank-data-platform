@@ -384,7 +384,8 @@ Prep for **consulting-level delivery** (not chỉ execution): technical credibil
 - **Technical:** Anh Tú có kinh nghiệm kỹ thuật tốt, phù hợp scope dự án (hybrid ETL, customer domain, governance trên AWS).
 - **Communication:** Khách consulting cần mức deliver tư vấn — acknowledge feedback, cam kết chủ động align BA/PO, frame business impact, close loop đến khi stakeholder hài lòng.
 
-Full talking points, scripts, and diagrams: [`interview/05-consulting-de-client-communication.md`](interview/05-consulting-de-client-communication.md)
+Full talking points, scripts, and diagrams: [`interview/05-consulting-de-client-communication.md`](interview/05-consulting-de-client-communication.md)  
+**Print 1-page cheat sheet:** [`interview/06-consulting-de-cheat-sheet-1page.md`](interview/06-consulting-de-cheat-sheet-1page.md)
 
 ---
 
