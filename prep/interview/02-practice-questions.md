@@ -1,6 +1,6 @@
 # Practice questions — CTO / client technical
 
-Repo refs: [`../docs/05-real-world-issues.md`](../docs/05-real-world-issues.md), [`../docs/06-case-missing-customer-income.md`](../docs/06-case-missing-customer-income.md).
+Repo refs: [`../../docs/05-real-world-issues.md`](../../docs/05-real-world-issues.md), [`../../docs/06-case-missing-customer-income.md`](../../docs/06-case-missing-customer-income.md).
 
 Practice **out loud in English**. Target **2–3 minutes** per answer.
 
@@ -23,8 +23,8 @@ Practice **out loud in English**. Target **2–3 minutes** per answer.
 
 ## B. SQL / modeling
 
-9. SCD2 update when income changes → see [`../samples/dim_customer_scd2.sql`](../samples/dim_customer_scd2.sql)  
-10. Gold null but CRM has income → see [`../samples/dq_income_completeness.sql`](../samples/dq_income_completeness.sql)  
+9. SCD2 update when income changes → see [`../../samples/dim_customer_scd2.sql`](../../samples/dim_customer_scd2.sql)  
+10. Gold null but CRM has income → see [`../../samples/dq_income_completeness.sql`](../../samples/dq_income_completeness.sql)  
 11. Dedup same `national_id`, different `customer_id`  
 12. Monthly snapshot fact with last known income  
 13. Fill rate trend by onboarding month  
@@ -45,7 +45,7 @@ Practice **out loud in English**. Target **2–3 minutes** per answer.
 
 ## D. Banking domain
 
-21. **T24** and synthetic layer — [`../cases/tcb-digital-streaming-layer.md`](../cases/tcb-digital-streaming-layer.md)  
+21. **T24** and synthetic layer — [`../../cases/tcb-digital-streaming-layer.md`](../../cases/tcb-digital-streaming-layer.md)  
 22. Onboarding KYC income vs annual review  
 23. **~1–2M checks/day** architecture impact  
 24. Core SoR vs warehouse SSOT boundaries  
@@ -55,7 +55,7 @@ Practice **out loud in English**. Target **2–3 minutes** per answer.
 
 ## E. System design
 
-26. Customer 360 on AWS — [`../docs/03-to-be-architecture.md`](../docs/03-to-be-architecture.md)  
+26. Customer 360 on AWS — [`../../docs/03-to-be-architecture.md`](../../docs/03-to-be-architecture.md)  
 27. Real-time fraud features + batch DWH  
 28. Group bank central DWH vs VN mart  
 29. Alert when income completeness SLO breached  

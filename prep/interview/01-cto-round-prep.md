@@ -1,6 +1,6 @@
 # CTO round prep — VN retail bank AWS migration case
 
-Answer in **English**. Repo refs: [`../docs/`](../docs/), [`../samples/`](../samples/).
+Answer in **English**. Repo refs: [`../../docs/`](../../docs/), [`../../samples/`](../../samples/).
 
 Full detail: same as SotaTek pack, paths updated for this repo.
 
@@ -25,19 +25,19 @@ fields with seventy percent missing — source remediation, DQ gates, declared v
 
 ## STAR — MSB
 
-See [`../cases/msb-marketing-aws-pilot.md`](../cases/msb-marketing-aws-pilot.md).
+See [`../../cases/msb-marketing-aws-pilot.md`](../../cases/msb-marketing-aws-pilot.md).
 
 ## STAR — TCB
 
-See [`../cases/tcb-digital-streaming-layer.md`](../cases/tcb-digital-streaming-layer.md).
+See [`../../cases/tcb-digital-streaming-layer.md`](../../cases/tcb-digital-streaming-layer.md).
 
 ## Case — missing income
 
-See [`../docs/06-case-missing-customer-income.md`](../docs/06-case-missing-customer-income.md).
+See [`../../docs/06-case-missing-customer-income.md`](../../docs/06-case-missing-customer-income.md).
 
 ## Whiteboard
 
-See [`../docs/03-to-be-architecture.md`](../docs/03-to-be-architecture.md) mermaid diagram.
+See [`../../docs/03-to-be-architecture.md`](../../docs/03-to-be-architecture.md) mermaid diagram.
 
 ## Questions for CTO
 

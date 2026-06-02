@@ -19,7 +19,7 @@
 | SSOT customer | `docs/06-case-missing-customer-income.md`, ER in to-be doc |
 | DQ, lineage, metadata | `samples/dq_*`, audit columns in glue sample |
 | Regulatory compliance | Governance sections in case + real-world issues |
-| Mentor junior DE | STAR in interview prep; code review mentions in README pitch |
+| Mentor junior DE | STAR in `prep/interview/`; code review mentions in README pitch |
 | Partner BA/DS/EA | Workshop notes in MSB case |
 
 ---

@@ -8,7 +8,7 @@
 | **Domain** | Retail banking (BFSI), NHNN-regulated |
 | **Sources** | Oracle RAC (core/CRM), **T24** `FBNK_*`, card, Kafka payments |
 | **Cloud** | S3, Glue, Lake Formation, MSK, Redshift, **Athena**, Step Functions / Airflow |
-| **JD alignment** | [KUP Partner Senior Data Engineer](interview/03-jd-kup-partner-mapping.md) — hybrid ETL, SSOT, DQ, governance |
+| **JD alignment** | [KUP Partner Senior Data Engineer](prep/interview/03-jd-kup-partner-mapping.md) — hybrid ETL, SSOT, DQ, governance |
 
 > **Disclaimer:** Anonymized **educational case study** for portfolio and interview use. No confidential bank data, proprietary BCG deliverables, or production credentials.
 
@@ -23,8 +23,7 @@
 5. [Real-world ETL & production issues](#5-real-world-etl--production-issues)
 6. [Vendor ↔ bank collaboration (BA, PO, IT)](#6-vendor--bank-collaboration-ba-po-it)
 7. [JD mapping & interview pitch](#7-jd-mapping--interview-pitch)
-8. [Consulting DE — technical fit & client communication](#8-consulting-de--technical-fit--client-communication)
-9. [Repo map](#9-repo-map)
+8. [Repo map](#8-repo-map)
 
 ---
 
@@ -342,7 +341,7 @@ sequenceDiagram
 | Spark, Airflow, Python, SQL | All `samples/` |
 | Client / mentorship | `cases/*.md`, `07-vendor-bank-collaboration.md` |
 
-Full mapping: [`interview/03-jd-kup-partner-mapping.md`](interview/03-jd-kup-partner-mapping.md)
+Full mapping: [`prep/interview/03-jd-kup-partner-mapping.md`](prep/interview/03-jd-kup-partner-mapping.md)
 
 ### 7.2 90-second pitch (English)
 
@@ -366,30 +365,11 @@ That's the same shape as your Data Enhancement program: hybrid ingest, SSOT,
 and governed pipelines on Glue, Redshift, and Athena.
 ```
 
-Interview pack: [`interview/01-cto-round-prep.md`](interview/01-cto-round-prep.md) · [`interview/02-practice-questions.md`](interview/02-practice-questions.md)
+Interview prep (optional): [`prep/interview/`](prep/interview/) — CTO prep, JD mapping, consulting communication scripts.
 
 ---
 
-## 8. Consulting DE — technical fit & client communication
-
-Prep for **consulting-level delivery** (not chỉ execution): technical credibility + proactive client relationship.
-
-| Theme | What to communicate | Detail |
-|-------|----------------------|--------|
-| **Technical** | Kỹ năng phù hợp scope hybrid Oracle/T24 → AWS, SSOT, DQ, streaming | Repo samples + MSB/TCB cases |
-| **Client relationship** | Chủ động, nhanh nhạy, độc lập hơn với BA/PO; báo risk sớm; đưa options + recommendation | Scripts VN/EN, 30-day plan |
-
-**Key messages (summary):**
-
-- **Technical:** Anh Tú có kinh nghiệm kỹ thuật tốt, phù hợp scope dự án (hybrid ETL, customer domain, governance trên AWS).
-- **Communication:** Khách consulting cần mức deliver tư vấn — acknowledge feedback, cam kết chủ động align BA/PO, frame business impact, close loop đến khi stakeholder hài lòng.
-
-Full talking points, scripts, and diagrams: [`interview/05-consulting-de-client-communication.md`](interview/05-consulting-de-client-communication.md)  
-**Print 1-page cheat sheet:** [`interview/06-consulting-de-cheat-sheet-1page.md`](interview/06-consulting-de-cheat-sheet-1page.md)
-
----
-
-## 9. Repo map
+## 8. Repo map
 
 ```
 bcg-vn-digital-bank-data-platform/
@@ -407,8 +387,7 @@ bcg-vn-digital-bank-data-platform/
 │   ├── msb-marketing-aws-pilot.md
 │   └── tcb-digital-streaming-layer.md
 ├── samples/                                   ← as-is + proposed code
-├── interview/                                 ← JD, CTO prep, consulting communication
-│   └── 05-consulting-de-client-communication.md
+├── prep/                                      ← optional interview prep (see prep/interview/)
 └── requirements.txt
 ```
 

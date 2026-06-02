@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mock Technical Interview — 30 min | Will Tran × Consulting Client (Banking Data)</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --border: #2d3a4f;
+      --text: #e7ecf3;
+      --muted: #8b9cb3;
+      --client: #3b82f6;
+      --candidate: #10b981;
+      --accent: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      margin: 0;
+      padding: 1.5rem;
+      max-width: 52rem;
+      margin-inline: auto;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    h1 { font-size: 1.35rem; font-weight: 600; margin: 0 0 0.5rem; }
+    .meta { font-size: 0.875rem; color: var(--muted); }
+    .meta strong { color: var(--text); }
+    .timeline {
+      display: flex;
+      gap: 0.35rem;
+      margin: 1rem 0 0;
+      flex-wrap: wrap;
+      font-size: 0.7rem;
+    }
+    .timeline span {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      color: var(--muted);
+    }
+    .disclaimer {
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 0.65rem 0.85rem;
+      margin-bottom: 1.5rem;
+      border-radius: 0 6px 6px 0;
+    }
+    section.qa {
+      margin-bottom: 1.35rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .qa-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0.85rem;
+      background: rgba(0,0,0,0.2);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .qa-head time { color: var(--accent); font-variant-numeric: tabular-nums; }
+    .turn {
+      padding: 0.65rem 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    .turn:first-of-type { border-top: none; }
+    .speaker {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+    .speaker.client { color: var(--client); }
+    .speaker.candidate { color: var(--candidate); }
+    .turn p { margin: 0 0 0.5rem; font-size: 0.92rem; }
+    .turn p:last-child { margin-bottom: 0; }
+    .turn ul {
+      margin: 0.25rem 0 0;
+      padding-left: 1.15rem;
+      font-size: 0.88rem;
+    }
+    .turn li { margin-bottom: 0.25rem; }
+    code, .ref {
+      font-family: ui-monospace, "Cascadia Code", monospace;
+      font-size: 0.82em;
+      background: rgba(0,0,0,0.35);
+      padding: 0.1em 0.35em;
+      border-radius: 3px;
+    }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--client); }
+    @media print {
+      body { background: #fff; color: #111; max-width: none; }
+      :root { --surface: #f5f5f5; --border: #ccc; --muted: #444; }
+      section.qa { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mock technical interview transcript (~30 min)</h1>
+    <p class="meta">
+      <strong>Candidate:</strong> Will Tran — Senior Data Engineer (VN retail banking, AWS hybrid, ~6 yrs)<br />
+      <strong>Panel:</strong> Consulting firm — Technical Lead / Data Architect (bank Data Enhancement program)<br />
+      <strong>Context:</strong> BCG-style digital bank transform — Oracle/T24 → S3/Glue/Redshift/Athena, customer SSOT, DQ<br />
+      <strong>Repo:</strong> <code>bcg-vn-digital-bank-data-platform</code> · <strong>CV ref:</strong> CloudDE_WillTran_NAB_.pdf
+    </p>
+    <div class="timeline" aria-label="Session timeline">
+      <span>0:00 Intro</span>
+      <span>3:00 MSB</span>
+      <span>10:00 TCB</span>
+      <span>16:00 Income DQ</span>
+      <span>23:00 AWS / ops</span>
+      <span>27:00 Your Qs</span>
+      <span>30:00 Close</span>
+    </div>
+  </header>
+
+  <p class="disclaimer">
+    <strong>Practice mock only.</strong> Anonymized composite case (MSB/TCB patterns). Not a real client recording.
+    Answers align with repo samples (<code>samples/</code>, <code>docs/06-case-missing-customer-income.md</code>).
+    CV PDF is image-based — verify dates/metrics against your signed CV before live interviews.
+  </p>
+
+  <!-- 0:00 -->
+  <section class="qa" id="q1">
+    <div class="qa-head"><span>Opening</span><time>0:00 – 2:30</time></div>
+    <div class="turn">
+      <div class="speaker client">Client (Consulting TL)</div>
+      <p>Thanks for joining. In two minutes — who you are and why you’re a fit for our retail bank data enhancement work on AWS with on-prem Oracle still in play.</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <p>I’m Will — senior data engineer, about six years, mostly Vietnamese retail banking and APAC consulting plus some Australia cloud migration work.</p>
+      <ul>
+        <li>Batch and streaming from <strong>Oracle core, CRM, T24-shaped domains</strong> into <strong>medallion lakehouse</strong> and Redshift gold.</li>
+        <li><strong>MSB:</strong> BCG-led marketing AWS pilot — Glue ETL, governed marts, Athena/BI-facing layer.</li>
+        <li><strong>Techcombank:</strong> digital parallel run — synthetic T24 staging + <strong>Kafka ~1–2M payment checks/day</strong> when prod core couldn’t leave the bank.</li>
+        <li>Strength: <strong>customer SSOT</strong>, hybrid ingest SLAs, and shift-left DQ — e.g. optional income with ~70% missing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2:30 -->
+  <section class="qa" id="q2">
+    <div class="qa-head"><span>Engagement fit</span><time>2:30 – 5:00</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>The bank still runs T24 on Oracle RAC. ExCo wants cloud analytics but not a reckless big-bang. How would you frame the first 90 days?</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <ul>
+        <li><strong>Weeks 1–3:</strong> Source inventory, RACI with bank BA/PO/IT — <span class="ref">docs/07-vendor-bank-collaboration.md</span>.</li>
+        <li><strong>Pilot domain</strong> (we did marketing at MSB): one bounded mart on AWS before enterprise SSOT.</li>
+        <li><strong>Hybrid contract:</strong> JDBC nightly + optional CDC; <code>_SUCCESS</code> markers; no gold refresh on partial bronze.</li>
+        <li><strong>Customer thread early:</strong> <code>xref_customer_id</code> + SCD2 <code>dim_customer</code> — stops duplicate outreach pain.</li>
+        <li><strong>90-day metric:</strong> agreed DQ SLO (e.g. mortgage cohort income completeness) + lineage on gold publish.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5:00 -->
+  <section class="qa" id="q3">
+    <div class="qa-head"><span>Case — MSB</span><time>5:00 – 9:30</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Walk through MSB marketing pilot — your role, one hard decision, outcome.</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <p><strong>Situation:</strong> Marketing waited days for IT extracts; Oracle saturated at EOD; ExCo approved AWS pilot for non-ledger analytics.</p>
+      <p><strong>Task:</strong> Nightly Glue pipeline CRM/core → S3 bronze/silver → Redshift-class <code>mkt_*</code> marts; PII-scoped IAM; workshops for metric definitions.</p>
+      <p><strong>Action:</strong> Reused Glue job templates; idempotent daily partition loads; kept <code>mkt_</code> prefix until bank-wide SSOT — clear boundary with core squad.</p>
+      <p><strong>Result:</strong> Production pilot — marketing self-serve on cloud marts; pattern reused for wider lake program. <strong>Hard call:</strong> Glue over legacy Informatica for speed of iteration and cloud skill-building.</p>
+    </div>
+  </section>
+
+  <!-- 9:30 -->
+  <section class="qa" id="q4">
+    <div class="qa-head"><span>Case — TCB / streaming</span><time>9:30 – 14:00</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Techcombank couldn’t export production T24 to vendor cloud. How did you still enable digital testing and volume?</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <ul>
+        <li><strong>Synthetic T24-like layer</strong> — realistic shape/volume, no prod PII breach.</li>
+        <li><strong>MSK path:</strong> payment/digital events → bronze → silver conform → consumers; <strong>~1–2M checks/day</strong>.</li>
+        <li><strong>EOD reconciliation</strong> silver totals vs controlled core extracts — catch drift in parallel run.</li>
+        <li>Mapping workshops with vendor + bank — T24 entity knowledge is scarce; document in versioned mapping spec (<span class="ref">docs/08-source-target-mapping.md</span>).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 14:00 -->
+  <section class="qa" id="q5">
+    <div class="qa-head"><span>Deep dive — missing income</span><time>14:00 – 19:30</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>~70% of retail customers have no income in gold. Marketing and credit both complain. Your approach?</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <ol style="margin:0;padding-left:1.2rem;font-size:0.88rem;">
+        <li><strong>Measure</strong> — fill rate overall, by channel/product/region; CRM vs core vs gold (<code>dq_income_completeness.sql</code>).</li>
+        <li><strong>Segment root cause</strong> — optional UI (~45%), CRM not in ETL (~20%), mapping bugs (~5%), refused/N/A, migration gap.</li>
+        <li><strong>Source fix</strong> — PO policy: mortgage above limit X requires income; block submit in app for <code>requires_income</code> products.</li>
+        <li><strong>ETL fix</strong> — add CRM income to silver join; quarantine conflicts; remove legacy <code>NVL(income,0)</code> anti-pattern.</li>
+        <li><strong>DQ gates</strong> — CRITICAL if mortgage cohort &lt;95% complete; block gold publish (<code>dq_contract.py</code>).</li>
+        <li><strong>Estimates separate</strong> — <code>estimated_*</code> + <code>is_imputed</code>; never silent overwrite of declared.</li>
+        <li><strong>Governance by use case</strong> — marketing may use flagged estimates; <strong>final credit</strong> = declared or bureau-verified only.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 19:30 -->
+  <section class="qa" id="q6">
+    <div class="qa-head"><span>Architecture</span><time>19:30 – 23:00</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Whiteboard verbally: customer 360 on AWS with Oracle still system of record.</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <ul>
+        <li><strong>Ingest:</strong> Glue JDBC incremental + MSK for digital/payments; DMS CDC where policy allows.</li>
+        <li><strong>Medallion:</strong> S3 bronze (immutable, <code>pipeline_run_id</code>) → Glue Spark silver (typed, conformed <code>customer_id</code>) → DQ → Redshift gold.</li>
+        <li><strong>SSOT:</strong> <code>dim_customer</code> SCD2 + <code>xref_customer_id</code> (CIF, CRM party_id, app user_id).</li>
+        <li><strong>BI:</strong> Athena views on silver/gold for ad hoc; gold star for regulated marts.</li>
+        <li><strong>Security:</strong> Lake Formation column tags, KMS, deny imputed income columns for credit roles.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 23:00 -->
+  <section class="qa" id="q7">
+    <div class="qa-head"><span>AWS &amp; production</span><time>23:00 – 26:30</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Three quick ones: Glue vs Lambda vs EMR? Idempotent daily load? Last production incident?</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <ul>
+        <li><strong>Glue</strong> — scheduled Spark ETL, JDBC catalog, bookmarks. <strong>Lambda</strong> — small event transforms, API micro-batch. <strong>EMR</strong> — heavy custom Spark or long-running clusters when Glue limits bite.</li>
+        <li><strong>Idempotent daily:</strong> partition <code>dt=</code> + run_id; staging folder then atomic rename; overwrite only same partition; watermark on <code>last_updated_ts</code>.</li>
+        <li><strong>Incident (hybrid):</strong> VPN blip → half Oracle extract landed → downstream ran → BI wrong counts. Fix: <code>_SUCCESS</code> per extract, Step Functions/Airflow won’t trigger silver without it; comms template to BI before refresh; postmortem in <span class="ref">docs/05-real-world-issues.md</span>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 26:30 -->
+  <section class="qa" id="q8">
+    <div class="qa-head"><span>SQL / modeling</span><time>26:30 – 27:30</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Income changes in CRM — how does gold history behave?</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <p>SCD2 on <code>dim_customer</code>: close prior row (<code>valid_to</code>), insert new with updated <code>declared_income_*</code> and source attribution. Type 1 only for true corrections with audit ticket — otherwise you lose regulatory lineage. See <code>dim_customer_scd2.sql</code>.</p>
+    </div>
+  </section>
+
+  <!-- 27:30 -->
+  <section class="qa" id="q9">
+    <div class="qa-head"><span>Candidate questions</span><time>27:30 – 29:30</time></div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <ul>
+        <li>System of record for income today — core, CRM, or onboarding app?</li>
+        <li>Target SLA — batch T+1 or near-real-time attributes for digital campaigns?</li>
+        <li>Existing DQ tooling — Great Expectations, dbt tests, custom SQL only?</li>
+        <li>What does success look like at day 90 for the CDO?</li>
+      </ul>
+    </div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Core is SoR for balances; CRM often leads income capture but ETL lagged. Moving to nightly + selective intraday for digital. GX on silver; gold blocked on CRITICAL. Day 90: mortgage income completeness SLO and audit-ready lineage on customer mart.</p>
+    </div>
+  </section>
+
+  <!-- 29:30 -->
+  <section class="qa" id="q10">
+    <div class="qa-head"><span>Close</span><time>29:30 – 30:00</time></div>
+    <div class="turn">
+      <div class="speaker client">Client</div>
+      <p>Good depth on hybrid and governance. We’ll sync with delivery partner on onsite start and clearance. Any final line?</p>
+    </div>
+    <div class="turn">
+      <div class="speaker candidate">Will Tran</div>
+      <p>I’ve shipped the same shape you’re running — pilot domain, SSOT customer, DQ before gold — and I’m comfortable partnering with bank BA/PO under consulting governance. Happy to walk through the public portfolio repo if useful for the panel.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Prep map:</strong>
+      <a href="01-cto-round-prep.md">01-cto-round-prep.md</a> ·
+      <a href="02-practice-questions.md">02-practice-questions.md</a> ·
+      <a href="03-jd-kup-partner-mapping.md">03-jd-kup-partner-mapping.md</a>
+    </p>
+    <p><strong>Practice tip:</strong> Read each answer aloud in ~90–120s; full session ≈ 28–32 min with natural follow-ups.</p>
+    <p>Generated for <code>bcg-vn-digital-bank-data-platform</code> — MIT educational / interview use.</p>
+  </footer>
+</body>
+</html>
