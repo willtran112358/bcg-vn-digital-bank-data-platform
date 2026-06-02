@@ -23,7 +23,8 @@
 5. [Real-world ETL & production issues](#5-real-world-etl--production-issues)
 6. [Vendor ↔ bank collaboration (BA, PO, IT)](#6-vendor--bank-collaboration-ba-po-it)
 7. [JD mapping & interview pitch](#7-jd-mapping--interview-pitch)
-8. [Repo map](#8-repo-map)
+8. [Consulting DE — technical fit & client communication](#8-consulting-de--technical-fit--client-communication)
+9. [Repo map](#9-repo-map)
 
 ---
 
@@ -369,7 +370,25 @@ Interview pack: [`interview/01-cto-round-prep.md`](interview/01-cto-round-prep.m
 
 ---
 
-## 8. Repo map
+## 8. Consulting DE — technical fit & client communication
+
+Prep for **consulting-level delivery** (not chỉ execution): technical credibility + proactive client relationship.
+
+| Theme | What to communicate | Detail |
+|-------|----------------------|--------|
+| **Technical** | Kỹ năng phù hợp scope hybrid Oracle/T24 → AWS, SSOT, DQ, streaming | Repo samples + MSB/TCB cases |
+| **Client relationship** | Chủ động, nhanh nhạy, độc lập hơn với BA/PO; báo risk sớm; đưa options + recommendation | Scripts VN/EN, 30-day plan |
+
+**Key messages (summary):**
+
+- **Technical:** Anh Tú có kinh nghiệm kỹ thuật tốt, phù hợp scope dự án (hybrid ETL, customer domain, governance trên AWS).
+- **Communication:** Khách consulting cần mức deliver tư vấn — acknowledge feedback, cam kết chủ động align BA/PO, frame business impact, close loop đến khi stakeholder hài lòng.
+
+Full talking points, scripts, and diagrams: [`interview/05-consulting-de-client-communication.md`](interview/05-consulting-de-client-communication.md)
+
+---
+
+## 9. Repo map
 
 ```
 bcg-vn-digital-bank-data-platform/
@@ -387,7 +406,8 @@ bcg-vn-digital-bank-data-platform/
 │   ├── msb-marketing-aws-pilot.md
 │   └── tcb-digital-streaming-layer.md
 ├── samples/                                   ← as-is + proposed code
-├── interview/                                 ← JD & CTO prep
+├── interview/                                 ← JD, CTO prep, consulting communication
+│   └── 05-consulting-de-client-communication.md
 └── requirements.txt
 ```
 

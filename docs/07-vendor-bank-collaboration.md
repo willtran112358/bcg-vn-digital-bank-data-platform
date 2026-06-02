@@ -76,6 +76,8 @@ flowchart TB
 
 Detail case: [`06-case-missing-customer-income.md`](06-case-missing-customer-income.md)
 
+**Consulting DE communication scripts** (proactive BA/PO updates, VN/EN): [`../interview/05-consulting-de-client-communication.md`](../interview/05-consulting-de-client-communication.md)
+
 ---
 
 ## 5. Data governance issues — who decides what
