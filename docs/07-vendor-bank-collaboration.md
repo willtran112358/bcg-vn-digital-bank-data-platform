@@ -76,7 +76,7 @@ flowchart TB
 
 Detail case: [`06-case-missing-customer-income.md`](06-case-missing-customer-income.md)
 
-**Consulting DE communication scripts** (proactive BA/PO updates): [`../prep/interview/05-consulting-de-client-communication.md`](../prep/interview/05-consulting-de-client-communication.md)
+**Consulting DE communication scripts** (proactive BA/PO updates): [`../prep/interview/README.md`](../prep/interview/README.md)
 
 ---
 

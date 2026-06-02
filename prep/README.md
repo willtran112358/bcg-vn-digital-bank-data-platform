@@ -1,9 +1,10 @@
 # Prep materials
 
-Internal interview and client-communication prep (not required to understand the data platform case study).
+Optional interview prep (not required to understand the data platform case study).
 
 | Path | Contents |
 |------|----------|
-| [`interview/`](interview/) | CTO prep, JD mapping, consulting DE scripts, 1-page cheat sheet |
+| [`interview/README.md`](interview/README.md) | **Single guide** — consulting client round (communication-focused) |
+| [`interview/04-mock-technical-interview-30min-transcript.html`](interview/04-mock-technical-interview-30min-transcript.html) | Mock technical Q&A transcript (HTML) |
 
 Start with the main [`README.md`](../README.md) for business, architecture, and samples.

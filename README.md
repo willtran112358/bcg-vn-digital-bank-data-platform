@@ -8,7 +8,7 @@
 | **Domain** | Retail banking (BFSI), NHNN-regulated |
 | **Sources** | Oracle RAC (core/CRM), **T24** `FBNK_*`, card, Kafka payments |
 | **Cloud** | S3, Glue, Lake Formation, MSK, Redshift, **Athena**, Step Functions / Airflow |
-| **JD alignment** | [KUP Partner Senior Data Engineer](prep/interview/03-jd-kup-partner-mapping.md) — hybrid ETL, SSOT, DQ, governance |
+| **JD alignment** | [KUP Partner Senior Data Engineer](prep/interview/README.md) — hybrid ETL, SSOT, DQ, governance |
 
 > **Disclaimer:** Anonymized **educational case study** for portfolio and interview use. No confidential bank data, proprietary BCG deliverables, or production credentials.
 
@@ -341,7 +341,7 @@ sequenceDiagram
 | Spark, Airflow, Python, SQL | All `samples/` |
 | Client / mentorship | `cases/*.md`, `07-vendor-bank-collaboration.md` |
 
-Full mapping: [`prep/interview/03-jd-kup-partner-mapping.md`](prep/interview/03-jd-kup-partner-mapping.md)
+Full mapping: [`prep/interview/README.md`](prep/interview/README.md) (Section 13)
 
 ### 7.2 90-second pitch (English)
 
@@ -365,7 +365,7 @@ That's the same shape as your Data Enhancement program: hybrid ingest, SSOT,
 and governed pipelines on Glue, Redshift, and Athena.
 ```
 
-Interview prep (optional): [`prep/interview/`](prep/interview/) — CTO prep, JD mapping, consulting communication scripts.
+Interview prep (optional): [`prep/interview/README.md`](prep/interview/README.md) — consulting client round (communication-focused).
 
 ---
 
