@@ -16,6 +16,88 @@
 
 ---
 
+## 0.1 Quick learn (10 min) — Q&A mindmap: communicate with local bank as consulting DE
+
+**How to use this mindmap (≈10 minutes)**
+
+| Min | Focus | Jump to |
+|-----|--------|---------|
+| 1–2 | Core message + who you talk to | Center → **Core** + **Who** |
+| 3–4 | Six-step loop + daily stand-up pattern | **How** → §5, §6.1 |
+| 5–6 | Three hot scenarios (missing source, DQ, scope) | **Scenario Q&A** → §6.2–6.5 |
+| 7–8 | Questions you ask + they ask you | **You ask** / **They ask** → §9–10 |
+| 9–10 | Do / don't + closing commitment | **Rules** → §12, §11 |
+
+```mermaid
+mindmap
+  root((Consulting DE x Local Bank Q and A))
+    Core
+      Own the client thread
+      Technical fit already proven
+      70 percent communication
+      Impact options recommend ETA
+    Who
+      BA
+        Q: Are metrics correct
+        A: Mapping gaps segment analysis
+      PO
+        Q: When is gold ready
+        A: Priority go or no-go RAID
+      Bank IT
+        Q: Why did job fail
+        A: Extract window COB backfill plan
+      Core squad
+        Q: When is source ready
+        A: Forty-eight hour escalation path
+    How
+      Daily 3 bullets
+      Detect Impact Options Align Fix Close
+      Same day if gold at risk
+      Business not jargon
+    Scenario Q and A
+      Missing source
+        A: Plan A interim flag Plan B escalate
+      DQ CRITICAL
+        A: No gold until BA sign-off
+      Scope change
+        A: Defer vs MVP subset recommend B
+      Steering
+        A: Green amber red plus decision date
+    You ask client
+      Who signs gold
+      Estimated income for marketing vs credit
+      System of record for income
+      Batch T plus 1 vs realtime
+      Ninety day success metric
+      Status format preference
+    They ask you
+      Difficult stakeholder
+        STAR empathy no blame
+      Say no to go-live
+        DQ CRITICAL interim flags
+      Scope mid-sprint
+        Impact A B recommend today
+      Why consulting plus bank
+        Scale regulated partnership
+    Rules
+      Do proactive status
+      Do close loop
+      Do not wait to be asked
+      Do not fix in silo
+      Do not job failed only
+```
+
+**Scenario quick answers (say this structure)**
+
+| They say / situation | Your answer shape |
+|----------------------|-------------------|
+| “When will income be fixed?” | Impact → root cause % → two options → recommend → ETA → decision needed today |
+| “Can we go live?” | DQ status → gold blocked or interim with flags → who must sign off |
+| “Scope changed” | Blast radius → Option A defer → Option B MVP → recommend + PO sign-off today |
+| “Give me a status” | Green / amber / red → one risk → one PO decision → gold ETA |
+
+---
+
 ## 1. Opening pitch (60 seconds)
 
 > I am a consulting data engineer on Vietnamese retail banking programs — hybrid Oracle and T24 to AWS, customer SSOT, and shift-left data quality. The technical scope matches what I have delivered on MSB and TCB-style engagements in this portfolio.  
