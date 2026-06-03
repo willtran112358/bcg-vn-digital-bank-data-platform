@@ -25,7 +25,7 @@
 | 1–2 | Core message + who you talk to | Center → **Core** + **Who** |
 | 3–4 | Six-step loop + daily stand-up pattern | **How** → §5, §6.1 |
 | 5–6 | Three hot scenarios (missing source, DQ, scope) | **Scenario Q&A** → §6.2–6.5 |
-| 7–8 | Questions you ask + they ask you | **You ask** / **They ask** → §9–10 |
+| 7–8 | **UK consulting PM** Q&A (post-technical) | **§0.2** |
 | 9–10 | Do / don't + closing commitment | **Rules** → §12, §11 |
 
 ```mermaid
@@ -96,24 +96,32 @@ mindmap
 | “Scope changed” | Blast radius → Option A defer → Option B MVP → recommend + PO sign-off today |
 | “Give me a status” | Green / amber / red → one risk → one PO decision → gold ETA |
 
-### 0.2 PM estimate Q&A (wider digital transformation · local VN bank)
+### 0.2 UK consulting PM Q&A — wider digital transformation · local VN bank client
 
-Likely questions from the **consulting PM** on this program — short answers you can say in one breath.
+**Context:** Post-technical round with the **programme PM** (UK-based consulting firm; HSBC / Standard Chartered–style global retail bank programmes). They test **client-facing consulting DE** — not SQL depth. One-line answers; expand only if they probe.
 
 | Question | Answer |
 |----------|--------|
-| Why consulting DE on a bank program, not pure delivery? | Delivery proves pipelines; consulting proves I own the client thread — proactive status, business impact, options, same-day BA/PO alignment. |
-| How do you partner with bank BA and PO? | Co-draft mappings in refinement; daily 3-bullet status; escalate gold risk same day with impact + A/B + recommend + ETA. |
-| Core is Oracle/T24 and target is AWS — your role? | Hybrid extract with watermarks and COB respect; bronze→silver→gold with DQ gates; SSOT for customer attributes on the lakehouse. |
-| Marketing says income is wrong — what do you do first? | Measure by segment with BA; reconcile bronze/silver/source; block gold on CRITICAL DQ; interim silver with flags until PO signs policy. |
-| Can we go live with seventy percent null income? | No silent fill to gold; marketing may use **estimated** income with flags if PO + compliance agree; credit stays on **declared** only. |
-| Who decides go / no-go on gold? | PO for priority and release; BA for metric correctness; compliance when policy touches credit or audit. I surface all three early. |
-| How do you handle scope change mid-sprint? | Blast radius to dashboards/APIs; Option A defer + RAID; Option B MVP subset with flags; recommend one path and need PO sign-off today. |
-| How do you report status to steering? | Green / amber / red; one risk; one decision owner; gold ETA — thirty seconds, no jargon. |
-| What is your first thirty days on site? | Week 1 RACI with PO; week 2 daily proactive status; week 3 lead one triage/RAID; week 4 one exec readout slide. |
-| Why this VN retail bank digital transformation? | Regulated scale, real business impact (campaigns, audit, SLA); I have delivered MSB/TCB-style hybrid lakehouse patterns in this portfolio. |
-| Biggest risk you watch on these programs? | Source not ready (core/CRM), DQ CRITICAL at gold, and silent communication — I escalate before gold or steering is surprised. |
-| How do you work with bank IT vs core squad? | IT: extract windows, prod ops, backfill; core squad: source fields and COB — forty-eight-hour escalation path if source blocks the mart. |
+| Technical round passed — what do you prove now? | I own the **client thread**: proactive rhythm with bank BA/PO/IT, business-framed issues, options + recommendation, closed loops — same bar as global bank transformation squads. |
+| Why consulting DE here, not pure delivery? | Delivery ships jobs; consulting **co-owns outcomes** with the bank — mapping in refinement, RAID early, no surprise at SteerCo. |
+| How do you represent the firm to the VN bank client? | Professional, calm, no blame; translate tech to **campaign / audit / SLA** impact; never commit scope or dates without PM + PO alignment. |
+| How do you keep the PM informed without noise? | Daily **3 bullets** (risk · decision · gold ETA); amber/red same day; green in weekly RAID — facts and asks, not log dumps. |
+| When do you escalate to PM vs handle with the client? | Handle BA/PO triage when impact is squad-level; **escalate PM** when gold/release, compliance, or cross-squad dependency slips the milestone. |
+| How do you partner with bank BA and PO? | Co-draft mappings; segment analysis with BA; PO gets impact + Option A/B + recommend + ETA; same-day decision if gold is at risk. |
+| Local bank stakeholder is difficult — what do you do? | Listen first; structured updates (Detect→Close); no blame; document agreements in RAID; involve PM only if relationship or milestone is blocked. |
+| How do you communicate across UK PM and VN client timezone? | Written EOD summary for UK; critical blockers within **same VN business day**; never let PO discover risk at demo. |
+| Core Oracle/T24 → AWS — your role on transformation? | Hybrid extract (watermark, COB); medallion lakehouse; SSOT customer attributes; DQ gates — **marketing pilot first**, credit paths stricter. |
+| Marketing says income is wrong — first move? | Measure by segment with BA; reconcile bronze/silver/source; block gold on CRITICAL DQ; interim silver with flags until PO signs policy. |
+| Can we go live with seventy percent null income? | No silent NVL to gold; marketing may use **estimated** income with flags if PO + compliance agree; **declared only** for credit. |
+| Who signs gold go / no-go? | PO release priority; BA metric correctness; compliance for credit/audit — I surface all three **before** publish. |
+| Scope change mid-sprint — your playbook? | Blast radius (dashboards/APIs); A: defer + RAID; B: MVP subset + flags; recommend one path; **PO sign-off today**. |
+| How do you report to SteerCo / steering? | **Green / amber / red**; one risk; one decision owner; gold ETA — 30 seconds, executive language. |
+| Biggest programme risks you watch? | Source not ready (core/CRM); DQ CRITICAL at gold; **silent DE** — I escalate before client or PM is surprised. |
+| How do you work bank IT vs core squad? | IT: extract windows, prod ops, backfill; core: fields + COB; **48h escalation** if source blocks the mart. |
+| How does this compare to HSBC / Standard Chartered–style programmes? | Same pattern: regulated retail, hybrid legacy→cloud, strong governance, matrix BA/PO/IT — I apply that discipline on **VN local bank** delivery. |
+| What is your first thirty days on site? | W1 RACI with PO; W2 daily proactive status; W3 lead one triage/RAID item; W4 one exec green/amber/red slide. |
+| Why wider digital transformation at a VN retail bank? | Real business impact at scale; regulated domain; partnership with BA — technical fit is proven; I am raising **proactivity on client communication**. |
+| One line the PM should remember about you? | *Short status, early escalation with business impact and options, closed loop until the bank is satisfied — not quiet until demo.* |
 
 ---
 

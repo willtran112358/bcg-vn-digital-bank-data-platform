@@ -76,7 +76,7 @@ flowchart TB
 
 Detail case: [`06-case-missing-customer-income.md`](06-case-missing-customer-income.md)
 
-**Consulting DE communication scripts** (proactive BA/PO updates): [`../prep/interview/README.md`](../prep/interview/README.md) · **10-min Q&A mindmap**: [`../prep/interview/README.md#01-quick-learn-10-min--qa-mindmap-communicate-with-local-bank-as-consulting-de`](../prep/interview/README.md#01-quick-learn-10-min--qa-mindmap-communicate-with-local-bank-as-consulting-de)
+**Consulting DE communication scripts** (proactive BA/PO updates): [`../prep/interview/README.md`](../prep/interview/README.md) · **10-min mindmap**: [`../prep/interview/README.md#01-quick-learn-10-min--qa-mindmap-communicate-with-local-bank-as-consulting-de`](../prep/interview/README.md#01-quick-learn-10-min--qa-mindmap-communicate-with-local-bank-as-consulting-de) · **UK PM Q&A table**: [`../prep/interview/README.md#02-uk-consulting-pm-q--wider-digital-transformation--local-vn-bank-client`](../prep/interview/README.md#02-uk-consulting-pm-q--wider-digital-transformation--local-vn-bank-client)
 
 ---
 
