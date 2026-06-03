@@ -3,6 +3,22 @@
 > **Single prep guide** for the post-technical round. Focus: **client relationship, proactive consulting delivery**, and business-framed communication on BCG-style bank programs.  
 > Case study repo: [`../../README.md`](../../README.md) · Collaboration playbook: [`../../docs/07-vendor-bank-collaboration.md`](../../docs/07-vendor-bank-collaboration.md)
 
+## CV re-intro (if they have not read your CV)
+
+**~8 years · consulting + bank DWH · hybrid cloud.** Say this in **60 seconds** before communication examples.
+
+| Period | Role | Client / domain | Relevant for this round |
+|--------|------|-----------------|-------------------------|
+| 2023–now | **Consultant Data Engineer** | NAB — retail bank DWH (Australia) | 1.5TB lake ETL; customer segmentation; cost and delivery leadership on a regulated bank program |
+| 2020–2023 | Sr. Data Engineer | Savills — real estate DWH | Azure ADF / Functions ETL; reliability and pipeline optimisation at scale |
+| 2018–2020 | **Analytic Engineer** | **BCG — banking DWH** | **Client-facing consulting**: users to C-level; custom analytics; satisfaction and cycle-time gains |
+| 2016–2018 | Data Engineer | Microsoft Vietnam — D365 BI | ERP/OLAP (SSIS/SSAS); partner and stakeholder delivery |
+
+| Fit for VN bank digital transformation | **Legacy + cloud:** Oracle, SQL Server, Azure Synapse, Redshift, S3 · **Orchestration:** Airflow, dbt, Python/SQL/PySpark · **BI:** Power BI, Tableau |
+| Languages | English **IELTS 7** · French DELF A2 |
+
+**Closing one-liner:** *BCG banking DWH plus NAB consultant DE — I know regulated bank delivery and I am deliberately strong on proactive BA/PO communication for local client programs.*
+
 ---
 
 ## 0. Round strategy
