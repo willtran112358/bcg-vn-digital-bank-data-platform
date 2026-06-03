@@ -96,6 +96,25 @@ mindmap
 | “Scope changed” | Blast radius → Option A defer → Option B MVP → recommend + PO sign-off today |
 | “Give me a status” | Green / amber / red → one risk → one PO decision → gold ETA |
 
+### 0.2 PM estimate Q&A (wider digital transformation · local VN bank)
+
+Likely questions from the **consulting PM** on this program — short answers you can say in one breath.
+
+| Question | Answer |
+|----------|--------|
+| Why consulting DE on a bank program, not pure delivery? | Delivery proves pipelines; consulting proves I own the client thread — proactive status, business impact, options, same-day BA/PO alignment. |
+| How do you partner with bank BA and PO? | Co-draft mappings in refinement; daily 3-bullet status; escalate gold risk same day with impact + A/B + recommend + ETA. |
+| Core is Oracle/T24 and target is AWS — your role? | Hybrid extract with watermarks and COB respect; bronze→silver→gold with DQ gates; SSOT for customer attributes on the lakehouse. |
+| Marketing says income is wrong — what do you do first? | Measure by segment with BA; reconcile bronze/silver/source; block gold on CRITICAL DQ; interim silver with flags until PO signs policy. |
+| Can we go live with seventy percent null income? | No silent fill to gold; marketing may use **estimated** income with flags if PO + compliance agree; credit stays on **declared** only. |
+| Who decides go / no-go on gold? | PO for priority and release; BA for metric correctness; compliance when policy touches credit or audit. I surface all three early. |
+| How do you handle scope change mid-sprint? | Blast radius to dashboards/APIs; Option A defer + RAID; Option B MVP subset with flags; recommend one path and need PO sign-off today. |
+| How do you report status to steering? | Green / amber / red; one risk; one decision owner; gold ETA — thirty seconds, no jargon. |
+| What is your first thirty days on site? | Week 1 RACI with PO; week 2 daily proactive status; week 3 lead one triage/RAID; week 4 one exec readout slide. |
+| Why this VN retail bank digital transformation? | Regulated scale, real business impact (campaigns, audit, SLA); I have delivered MSB/TCB-style hybrid lakehouse patterns in this portfolio. |
+| Biggest risk you watch on these programs? | Source not ready (core/CRM), DQ CRITICAL at gold, and silent communication — I escalate before gold or steering is surprised. |
+| How do you work with bank IT vs core squad? | IT: extract windows, prod ops, backfill; core squad: source fields and COB — forty-eight-hour escalation path if source blocks the mart. |
+
 ---
 
 ## 1. Opening pitch (60 seconds)
